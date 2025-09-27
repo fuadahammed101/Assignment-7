@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 80px 432px;
+  min-height: 100vh;
+  background: #F5F5F5;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 158px 20px 0;
+    gap: 40px;
+  }
+
+  .main {
+    flex-direction: column;
+    gap: 24px;
+    min-height: auto;
+  }
+}
